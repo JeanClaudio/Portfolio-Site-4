@@ -84,17 +84,18 @@
     background-color: rgb(255, 255, 255);
     text-align: center;
     line-height: 2.5em;
-    border-radius: 5px;
 }
 
 .card-left:hover{
     box-shadow: 7px 7px 10px rgb(80, 80, 80);
 }
 
+
 .img-wrapper-sobre{
     width: 300px;
     height: 300px;
     margin: 10px auto;
+    background-color: black;
 }
 
 .img-wrapper-sobre img{
