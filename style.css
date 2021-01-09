@@ -7,10 +7,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-.clear{
-    clear: both;
-}
-
 
 .header{
     width: 100%;
@@ -80,16 +76,28 @@
     width: 100%;
     padding-top: 5em;
     padding-bottom: 5em;
-    background: url('img/bg3.jpg');
+    background: url('img/bg3.jpg') center top;
     background-size:cover;
     object-fit: cover;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
+}
+
+.flex-a{
+    width: 600px;
+    display: flex;
+    padding-bottom: 2em;
+}
+
+.flex-b{
+    width: 600px;
+    display: flex;
 }
 
 
 .card-left {
-    width: 45%;
+    width: 100%;
     height: 500px;
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -152,7 +160,7 @@
 }
 
 .card-right{
-    width: 45%;
+    width: 100%;
     height: 500px;
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -203,17 +211,90 @@
 }
 
 
-.projetos p{
+/*Projetos*/
+.projetos{
     width: 100%;
-    height: 100px;
+    min-height: 750px;
+    background: url('img/bginv.jpg') bottom;
+    background-size:cover;
+    object-fit: cover;
 }
 
-
-.projetos h2{
-    width: 300px;
-    margin: 0 auto 3em auto;
-    text-align: center;
+.projetos-title{
+    width: 100%;
     font-size: 3em;
     color: rgb(60, 184, 255);
-    border-bottom: 3px solid rgb(60, 184, 255);
+    text-align: center;
+    margin: 1em auto;
+}
+.projetos-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0, 0, 0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 420px;
+}
+
+.card img-bx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top:-60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0,0.2);
+}
+
+.img-bx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+ .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.content h2{
+    font-size: 1.5em;
+    color: rgb(60, 184, 255);
+    border-bottom: 1px solid rgb(60, 184, 255);
+    padding-bottom: 15px;
+    margin: 1em auto;
+}
+
+.container .card:hover .content{
+    visibility:visible;
+    opacity: 1;
+    margin-top: 10px;
+    transition-delay: 0.3s;
 }
