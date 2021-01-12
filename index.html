@@ -10,16 +10,16 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="menu">
         <div class="img-wrapper-bg">
             <img src="img/back.jpg" alt="" >
         </div>
         
         <ul class="menu">
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li><a href="#menu">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#sobre">Contato</a></li>
         </ul>
 
         <div class="header-apresentacao">
@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="flex-a">
             <div class="card-left">
                     <div class="img-wrapper-sobre">
@@ -47,8 +47,8 @@
                         <li>j.claudio.j@hotmail.com</li>
                     </ul>
                     <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-github-alt"></i></a>
+                        <a href="https://www.facebook.com/jean.claudio.37604/" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/JeanClaudio" target="blank"><i class="fab fa-github-alt"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
             </div>
@@ -56,50 +56,67 @@
         <div class="flex-b">
             <div class="card-right">
                 <h2>Jean Cláudio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim neque facilis deleniti ipsam vel quasi facere harum sint, ipsa reiciendis quidem porro! Repellendus magni deleniti laudantium similique ipsa, voluptatem nulla assumenda. Nulla tempora est, dolorem officiis voluptates optio alias.</p>
+                <p>" <span>Olá!</span><br>
+                    Meu nome é Jean Cláudio, sou estudante do 4° semestre do curso de Gestão da Tecnologia da Informação na Fatec Tatuí. E meu objetivo é construir uma carreira na área de desenvolvimento web"</p>
 
-                <button>Baixar Currículo</button>
+                <a href="pdf/JeanClaudio.pdf" target="blank" download><button class="btn">Baixar Currículo</button></a>
             </div>
         </div>
 
     </section>
 
-    <section class="projetos">
+    <section class="projetos" id="projetos">
         <h2 class="projetos-title">Projetos</h2>
             <div class="projetos-box">
                 <div class="container">
+
                     <div class="card">
                         <div class="img-bx">
-                            <img src="img/servicos.jpg" alt="">
+                            <img src="img/pj1.png" alt="">
                         </div>
                         <div class="content">
-                            <h2>Card One</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo culpa sapiente illo harum optio. Quod.</p>
+                            <h2>Projeto 1</h2>
+                            <p>"Primeiro site desenvolvido para estudo de manipulação de tags HTML5, estilos em CSS3 e lógica de programação com Javascript."</p>
+                            <a href="Portfolio/index.html" target="blank" download><button class="btn">Ver</button></a>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="img-bx">
-                            <img src="img/servicos.jpg" alt="">
+                            <img src="img/pj2.png" alt="">
                         </div>
                         <div class="content">
-                            <h2>Card One</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo culpa sapiente illo harum optio. Quod.</p>
+                            <h2>Projeto 2</h2>
+                            <p>"Site desenvolvido para aprofundar conhecimentos em HTML5 e CSS3"</p>
+                            <a href="Portfolio-Site-2/index.html" target="blank" download><button class="btn">Ver</button></a>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="img-bx">
-                            <img src="img/servicos.jpg" alt="">
+                            <img src="img/pj3.png" alt="">
                         </div>
                         <div class="content">
-                            <h2>Card One</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis nemo culpa sapiente illo harum optio. Quod.</p>
+                            <h2>Projeto 3</h2>
+                            <p>"Projeto para estudo de criação de sites responsivos, usando HTML5, CSS3 e Javascript"</p>
+                            <a href="Portfolio-Site-3/index.html" target="blank" download><button class="btn">Ver</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer class="footer">
+
+            <a href="#menu" id="link-topo">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+            <h3>
+                Design by <a href="#sobre">JC</a>
+            </h3>
+        
+        </footer>
     
 </body>
 </html>
